@@ -1,0 +1,10 @@
+package com.redhat.simple;
+
+rule "Hello World"
+ruleflow-group "greeting"
+
+	when
+	
+	then
+		System.out.println("Hello Drools");
+end
