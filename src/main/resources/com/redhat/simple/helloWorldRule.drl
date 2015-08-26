@@ -1,10 +1,15 @@
 package com.redhat.simple;
+import com.redhat.Greeting;
 
 rule "Hello World"
 ruleflow-group "greeting"
 
 	when
-	
-	then
-		System.out.println("Hello Drools");
+        //conditions
+        greeting : Greeting(greeting == null)
+    then
+        //actions
+        modify(greeting) {setGreeting("Hello, World!")};
+        System.out.println("fired rule " + kcontext.getRule().getName());
+
 end

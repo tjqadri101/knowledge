@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.redhat</groupId>
-	<artifactId>knowledge</artifactId>
+	<artifactId>tqadri-knowledge</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -16,10 +16,11 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.redhat</groupId>
-			<artifactId>domain</artifactId>
+			<artifactId>tqadri-domain</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
+	
 
 	<distributionManagement>
 		<snapshotRepository>
